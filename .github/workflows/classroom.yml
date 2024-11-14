@@ -61,7 +61,7 @@ jobs:
 
   build-image-cars-service:
     name: Build and push cars-service Docker image
-    needs: ["autograding"]
+    needs: ["test-cars-service"]
     uses: ./.github/workflows/build-image.yml
     with:
       service-name: cars-service
@@ -71,7 +71,7 @@ jobs:
 
   build-image-payment-service:
     name: Build and push payment-service Docker image
-    needs: ["autograding"]
+    needs: ["test-payment-service"]
     uses: ./.github/workflows/build-image.yml
     with:
       service-name: payment-service
@@ -81,7 +81,7 @@ jobs:
 
   build-image-rental-service:
     name: Build and push rental-service Docker image
-    needs: ["autograding"]
+    needs: ["test-rental-service"]
     uses: ./.github/workflows/build-image.yml
     with:
       service-name: rental-service
@@ -91,7 +91,7 @@ jobs:
 
   build-image-gateway:
     name: Build and push gateway Docker image
-    needs: ["autograding"]
+    needs: ["test-gateway"]
     uses: ./.github/workflows/build-image.yml
     with:
       service-name: gateway
