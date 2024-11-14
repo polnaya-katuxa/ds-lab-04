@@ -1,0 +1,8 @@
+Postgres:
+  Host: rental-postgres
+  Port: 5432
+  User: program
+  Password: test
+  DBName: postgres
+Port: 8060
+LogLevel: debug

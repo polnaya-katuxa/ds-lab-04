@@ -1,0 +1,8 @@
+Postgres:
+  Host: cars-postgres
+  Port: 5432
+  User: program
+  Password: test
+  DBName: postgres
+Port: 8070
+LogLevel: debug
